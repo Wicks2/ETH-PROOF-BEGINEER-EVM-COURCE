@@ -56,8 +56,8 @@ The contract is named MyToken.
 3. The constructor takes the initial name, symbol, and total supply of the token. It initializes the contract creator's balance with the total supply.
 4. The mint function allows anyone to mint new tokens by providing an address and a value. It increases the total supply by the given value and increases the balance of the specified address accordingly.
 5. The burn function allows token holders to burn (destroy) their tokens. It checks if the balance of the account is greater than or equal to the value to be burned. If so, it deducts the value from the total supply and from the balance of the account.
-Author:
-Abhay Partap Singh Rana
+
+Author: Abhay Partap Singh Rana
 
 https://www.linkedin.com/in/abhay-rana-4520a5220
 
