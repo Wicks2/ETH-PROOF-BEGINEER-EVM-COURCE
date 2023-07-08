@@ -19,6 +19,7 @@ Start a new file in the code editor within Remix. Copy and paste the following c
 pragma solidity 0.8.18;
 
 contract MyToken {
+
     string public tokenName;
     string public tokenAbbrv;
     uint public totalSupply;
