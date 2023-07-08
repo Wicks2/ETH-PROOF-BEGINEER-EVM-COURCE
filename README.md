@@ -5,7 +5,7 @@ The project involves the creation of a custom token using the Solidity programmi
 Description
 This project focuses on creating a custom token using the Solidity programming language within the Remix IDE. Remix is a popular web-based development environment that provides a user-friendly interface for writing, compiling, and deploying smart contracts on the Ethereum blockchain.
 
-Getting Started With Executing program
+Getting Started With Executing Program
 The project will involve the following steps:
 
 Setting up Remix:
@@ -50,16 +50,19 @@ Use the Remix compiler panel to compile your token contract.
 Select the appropriate compiler version i.e 0.8.18.
 Let me explain the different parts of the contract:
 
-The contract is named MyToken.
-1. It has public variables name, symbol, and totalSupply to store the details about the token.
-2. There is a mapping balances that maps addresses to their respective token balances.
-3. The constructor takes the initial name, symbol, and total supply of the token. It initializes the contract creator's balance with the total supply.
-4. The mint function allows anyone to mint new tokens by providing an address and a value. It increases the total supply by the given value and increases the balance of the specified address accordingly.
-5. The burn function allows token holders to burn (destroy) their tokens. It checks if the balance of the account is greater than or equal to the value to be burned. If so, it deducts the value from the total supply and from the balance of the account.
+The contract is named MyToken and the following are some functionalities of the code: 
 
-Author: Abhay Partap Singh Rana
+1. Token Creation: When the contract is deployed, the constructor function is executed, which takes three parameters: _name (the name of the token), _symbol (the symbol or ticker of the token), and _totalSupply (the initial total supply of tokens). The constructor initializes the contract's state variables name, symbol, and total supply with the provided values. It also assigns the entire supply to the address that deployed the contract by updating the balances mapping.
 
-https://www.linkedin.com/in/abhay-rana-4520a5220
+2. Minting: The mint function allows additional tokens to be created and added to the supply. It takes two parameters: account (the address to which the new tokens will be assigned) and value (the amount of tokens to mint). This function increases the totalSupply by the specified value and adds the minted tokens to the balances mapping for the account address.
+
+3. Burning: The burn function allows tokens to be removed from circulation. It takes two parameters: account (the address from which tokens will be burned) and value (the amount of tokens to burn). This function first checks if the account has a sufficient balance to burn the specified value. If the balance is sufficient, it decreases the totalSupply by the specified value and updates the balances mapping for the account address accordingly.
+
+4. Read-Only Functions: The balances mapping is declared as public, allowing it to be accessed directly. This means you can query the balance of any address using balances[address] after the contract is deployed. Similarly, the name, symbol, and totalSupply variables are declared as public, enabling their values to be accessed directly.
+
+After deploying this contract, you will have a token contract with the ability to create tokens, assign them to addresses, and remove tokens from circulation through minting and burning functions. The contract also provides read-only access to token balances and other metadata such as name, symbol, and total supply.
+
+Author: Abhay Partap Singh Rana/https://www.linkedin.com/in/abhay-rana-4520a5220
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.This code is licensed under the MIT License. You can find the license text in the SPDX-License-Identifier comment at the beginning of the contract.
