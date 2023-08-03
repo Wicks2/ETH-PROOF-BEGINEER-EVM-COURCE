@@ -41,7 +41,7 @@ To use this smart contract, you can deploy it on the Ethereum blockchain using a
 Credits
 This project is a solution to the project task provided by MetaCrafters.
 
-Authors
+Author:
 Abhay Partap Singh Rana https://www.linkedin.com/in/abhay-rana-4520a5220
 
 License This project is licensed under the MIT License - see the LICENSE.md file for details.This code is licensed under the MIT License. You can find the license text in the SPDX-License-Identifier comment at the beginning of the contract.
